@@ -31,23 +31,23 @@ config = {
   output: {
     publicPath: "/",
     path: path.resolve(__dirname, "app"),
-    filename: "bundled.js",
+    filename: "bundled.js"
   },
   plugins: [
     new Dotenv(),
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "app/index-template.html",
-      alwaysWriteToDisk: true,
+      alwaysWriteToDisk: true
     }),
-    new HtmlWebpackHarddiskPlugin(),
+    new HtmlWebpackHarddiskPlugin()
   ],
   mode: "development",
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: /(node_modules)/,
         use: {
           loader: "babel-loader",
           options: {
