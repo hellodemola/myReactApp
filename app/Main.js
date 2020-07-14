@@ -1,7 +1,7 @@
 import React, {useState, useReducer, useEffect, useContext, Suspense} from 'react'
 import {useImmerReducer} from 'use-immer'
 import ReactDOM from 'react-dom'
-import {BrowserRouter, Switch, Route} from 'react-r   outer-dom'
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import {CSSTransition} from 'react-transition-group'
 import Axios from 'axios'
 Axios.defaults.baseURL = process.env.BACKENDURL || 'https://backend-api-hd.herokuapp.com'
