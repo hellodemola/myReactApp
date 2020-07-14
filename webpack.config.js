@@ -49,7 +49,7 @@ config = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-          rules: "babel-loader",
+          loader : "babel-loader",
           options: {
             presets: ["@babel/preset-react", ["@babel/preset-env", { targets: { node: "12" } }]],
           },
