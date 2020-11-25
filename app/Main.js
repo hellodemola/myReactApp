@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import {CSSTransition} from 'react-transition-group'
 import Axios from 'axios'
-Axios.defaults.baseURL = process.env.BACKENDURL || 'https://yousure-backend.herokuapp.com'
+Axios.defaults.baseURL = 'https://backend-api-hd.herokuapp.com/'
 
 // My Components
 import Header from './components/Header'
